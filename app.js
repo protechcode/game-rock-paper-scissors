@@ -14,7 +14,7 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
 }))
 
 function generateComputerChoice() {
-    const randomNumber = Math.floor(Math.random() * 3) + 1 
+    const randomNumber = Math.floor(Math.random() * possibleChoices.length) 
     console.log(randomNumber)
 
     if(randomNumber === 1) {
@@ -31,7 +31,7 @@ function generateComputerChoice() {
 
 function getResult() {
     if (computerChoice === userChoice) {
-        result ='its a draw!'
+        result ="it's a draw!"
     }
     if (computerChoice === 'rock' && userChoice === 'paper') {
         result = 'You win!'
@@ -46,10 +46,10 @@ function getResult() {
         result = 'You lost!'
     }
     if (computerChoice === 'scissors' && userChoice === 'rock') {
-        result = 'its a win!'
+        result = 'You win!'
     }
     if (computerChoice === 'scissors' && userChoice === 'paper') {
-        result = 'its a lost!'
+        result = "You lost!"
     }
     resultDisplay.innerHTML = result
 }

@@ -12,13 +12,14 @@
 </head>
 
 <body>
-    
+
 
 
     <section class="container p-6 mx-auto bg-white dark:bg-gray-800">
         <h1 class="text-xl font-medium text-gray-900 capitalize dark:text-white md:text-4xl text-center">Rock Paper
             Scissors The Game</h1>
-        <h2 class="text-xl font-medium text-gray-800 capitalize dark:text-white md:text-2xl text-center">Choose one: <span id="user-choice"></span>
+        <h2 class="text-xl font-medium text-gray-800 capitalize dark:text-white md:text-2xl text-center">Choose one:
+            <span id="user-choice"></span>
         </h2>
 
 
@@ -26,23 +27,24 @@
             <div class="grid gap-8 mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
                 <div class="w-full max-w-xs text-center">
                     <button id="rock">
-                        <img class="object-cover object-center w-full h-48 mx-auto rounded-lg"
-                            src="https://media.istockphoto.com/photos/stone-pebble-gray-picture-id1288973456?k=20&m=1288973456&s=612x612&w=0&h=8HJEACc8t6KKVBQyg0YkYvl4Gj_yFqW0coW7YQl_qRY="
-                            alt="avatar" />
-                            
                         <div class="mt-2">
+                            <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" id="rock"
+                                src="https://media.istockphoto.com/photos/stone-pebble-gray-picture-id1288973456?k=20&m=1288973456&s=612x612&w=0&h=8HJEACc8t6KKVBQyg0YkYvl4Gj_yFqW0coW7YQl_qRY="
+                                alt="avatar" />
+
+
                             <h3 class="text-lg font-medium text-gray-700 dark:text-gray-200" id="rock">Rock</h3>
                         </div>
                     </button>
                 </div>
 
                 <div class="w-full max-w-xs text-center">
-                    
-                        
-                        <img class="object-cover object-center w-full h-48 mx-auto rounded-lg"
+
+                    <button id="paper">
+                        <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" id="paper"
                             src="https://media.istockphoto.com/photos/crumpled-paper-ball-picture-id532006885?b=1&k=20&m=532006885&s=170667a&w=0&h=9gLurtG95smnHN7CtgLtBOVQDfNu6kgF9fGouQlrucM="
-                            alt="avatar"/>
-                            <button id="paper"> 
+                            alt="avatar" />
+
                         <div class="mt-2">
                             <h3 class="text-lg font-medium text-gray-700 dark:text-gray-200" id="paper">Paper</h3>
                         </div>
@@ -52,7 +54,7 @@
                 <div class="w-full max-w-xs text-center">
 
                     <button id="scissors">
-                        <img class="object-cover object-center w-full h-48 mx-auto rounded-lg"
+                        <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" id="scissors"
                             src="https://media.istockphoto.com/photos/tailors-scissors-on-a-white-background-picture-id1273360607?k=20&m=1273360607&s=612x612&w=0&h=ocwmryXlimPbu6AmXdZFulAlvD62KGgS_-3Mq42hXG4="
                             alt="avatar" />
 
@@ -65,15 +67,16 @@
 
             </div>
         </div>
-        
-        <h2 class="text-xl font-medium text-gray-800 capitalize dark:text-white md:text-2xl text-center">Computer Choice: <span id="computer-choice"></span></h2>
+
+        <h2 class="text-xl font-medium text-gray-800 capitalize dark:text-white md:text-2xl text-center">Computer
+            Choice: <span id="computer-choice"></span></h2>
         <h2 class="text-xl font-medium text-gray-800 capitalize dark:text-white md:text-2xl text-center">Result: <span
                 id="result"></span></h2>
 
     </section>
 
-    
-    
+
+
     <script src="app.js" charset="UTF-8"></script>
 
 </body>
